@@ -170,18 +170,19 @@ the-rover/
 - Commercial properties
 - Residential security
 
-## 💰 ROI Examples
+## 💰 ROI Examples (Unified Platform Pricing)
 
 | Application | Manual Cost/Year | Rover Cost | Payback Period |
 |------------|------------------|------------|----------------|
-| Tennis ball collection | $15,000 | $3,000 | 2-3 months |
-| Golf course maintenance | $105,000 | $35,000 | 6-8 months |
-| Lawn service (5 acres) | $5,900 | $4,500 | 8-10 months |
-| Security patrol | $80,000 | $12,000 | 2-3 months |
-| Residential security | $3,600 | $2,000 | 7 months |
+| Tennis ball collection | $15,000 | $3,500 | 2-3 months |
+| Golf course maintenance | $105,000 | $18,000 | 3-4 months |
+| Lawn service (5 acres) | $5,900 | $4,000 | 8-10 months |
+| Commercial security patrol | $80,000 | $12,000 | 2-3 months |
+| Residential security | $3,600 | $3,000 | 10 months |
 | School safety officer | $60,000 | $25,000 | 5 months |
-| Search & rescue K9 | $45,000 | $15,000 | 4 months |
-| Livestock herding | $50,000 | $25,000 | 6 months |
+| Search & rescue operations | $45,000 | $20,000 | 4 months |
+| Livestock management | $50,000 | $6,000 | 1.5 months |
+| Farm crop monitoring | $30,000 | $6,500 | 3 months |
 
 ## 🏗️ Development Status
 

@@ -212,30 +212,69 @@ Public space maintenance for parks and recreational areas.
 
 ## Model Specifications
 
-### Complete Rover Family
-| Rover Type | Primary Function | Price Range | Status |
-|------------|-----------------|-------------|--------|
-| Tennis Rover | Ball collection | $3,000-5,000 | Prototype |
-| Lawn Rover | Mowing, trimming, blowing | $4,000-8,000 | Design |
-| Golf Rover | Ball collection + mowing | $12,000-60,000 | Design |
-| Security Rover | 24/7 patrol | $7,000-12,000 | Concept |
-| Security Rover Mini | Affordable security | $1,500-2,500 | Concept |
-| Herding Rover | Livestock management | $8,000-50,000 | Planning |
-| Farm Rover | Agricultural ops | $10,000-30,000 | Planning |
-| Snow Rover | Snow removal | $8,000-15,000 | Planning |
-| Vineyard Rover | Orchard care | $3,000-6,000 | Planning |
-| Property Rover | Commercial maintenance | $15,000-25,000 | Planning |
-| Vacuum Rover | Cleaning | $2,000-5,000 | Planning |
-| Delivery Rover | Package delivery | $5,000-10,000 | Concept |
-| Beach Rover | Beach cleaning | $10,000-20,000 | Concept |
-| Park Rover | Park maintenance | $8,000-12,000 | Concept |
-| Warehouse Rover | Inventory | $15,000-30,000 | Concept |
+### Complete Rover Family (Unified Platform Architecture)
+
+#### Consumer Platform (Shared Base: $2,500-4,000)
+| Rover Type | Primary Function | Platform Price | Status |
+|------------|-----------------|----------------|--------|
+| Tennis Rover | Ball collection | $3,000-4,000 | Prototype |
+| Lawn Rover | Mowing, trimming, blowing | $3,500-4,500 | Design |
+| Security Mini | Residential security | $2,500-3,500 | Concept |
+| Vacuum Rover | Home/small area cleaning | $2,000-3,000 | Planning |
+| Snow Rover Mini | Residential snow removal | $3,000-4,000 | Planning |
+
+#### Agricultural Platform (Shared Base: $4,000-8,000)  
+| Rover Type | Primary Function | Platform Price | Status |
+|------------|-----------------|----------------|--------|
+| Farm Rover | Crop monitoring & management | $5,000-8,000 | Planning |
+| Vineyard Rover | Orchard & vineyard care | $5,000-8,000 | Planning |
+| Herding Rover Mini | Small livestock management | $4,000-6,000 | Planning |
+
+#### Commercial Platform (Shared Base: $8,000-15,000)
+| Rover Type | Primary Function | Platform Price | Status |
+|------------|-----------------|----------------|--------|
+| Golf Rover | Course maintenance + balls | $12,000-25,000 | Design |
+| Security Rover | Commercial patrol | $10,000-15,000 | Concept |
+| Property Rover | Large area maintenance | $12,000-20,000 | Planning |
+| Park Rover | Public space maintenance | $10,000-15,000 | Concept |
+| Search Rover | Search & rescue operations | $15,000-25,000 | Concept |
+
+#### Specialized Platforms (Custom Pricing)
+| Rover Type | Primary Function | Platform Price | Status |
+|------------|-----------------|----------------|--------|
+| School Rover | Campus safety system | $20,000-30,000 | Design |
+| Herding Rover Pro | Large ranch operations | $15,000-40,000 | Planning |
+| Delivery Rover | Package delivery | $8,000-12,000 | Concept |
+| Beach Rover | Coastal cleaning | $15,000-25,000 | Concept |
+| Warehouse Rover | Inventory management | $20,000-35,000 | Concept |
+
+### Modular Platform Benefits
+
+#### Shared Base Components (80% cost savings)
+- **RoverBase**: Universal chassis and drive system
+- **RoverCore**: Computing and navigation platform
+- **RoverPower**: Battery and charging systems
+- **RoverSense**: Basic sensor suite (cameras, LIDAR, IMU)
+- **RoverConnect**: Communication and networking
+
+#### Platform-Specific Modules (20% customization)
+- **Consumer**: Basic sensors, residential-grade durability
+- **Agricultural**: Weather-resistant, extended battery, crop sensors
+- **Commercial**: Heavy-duty components, fleet management, security features
+- **Specialized**: Custom sensors, specialized attachments, mission-specific AI
+
+#### Manufacturing Advantages
+- **Economies of Scale**: Shared components reduce unit costs
+- **Reduced R&D**: Common platform spreads development costs
+- **Supply Chain**: Bulk purchasing of shared components
+- **Quality Control**: Proven reliability across applications
+- **Service Network**: Common parts and training
 
 ### Technology Extensions
-- **RoverDrone** - Aerial companion units
-- **RoverDock** - Universal charging stations
-- **RoverHub** - Central control systems
-- **RoverFleet** - Multi-unit coordination
+- **RoverDrone** - Aerial companion units for security patrol, perimeter monitoring, and elevated surveillance
+- **RoverDock** - Universal charging stations with platform-specific tool storage
+- **RoverHub** - Central control systems for fleet coordination
+- **RoverFleet** - Multi-unit coordination and swarm intelligence
 
 ## Implementation Guidelines
 

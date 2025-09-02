@@ -430,9 +430,20 @@ class ActiveThreatResponse:
 - Predictive behavior modeling
 - Coordination with city-wide systems
 - Integration with smart building systems
-- Drone companion units for aerial view
+
+#### RoverDrone Integration
+
+- **Aerial perimeter patrol**: Monitor school boundaries from above
+- **Elevated surveillance**: View over crowds during dismissal/lunch
+- **Indoor navigation**: Navigate hallways via ceiling-mounted guides  
+- **Emergency response**: Rapid deployment to incident location
+- **Coordinated coverage**: Ground rover + air drone = complete protection
+- **Discrete monitoring**: Less intimidating than traditional security cameras
+- **Sports event security**: Monitor large gatherings from optimal angles
+- **Search capabilities**: Locate missing students on large campuses
 
 ### Preventive Programs
+
 - Wellness check-ins with at-risk students
 - Positive behavior reinforcement
 - Anti-bullying intervention
