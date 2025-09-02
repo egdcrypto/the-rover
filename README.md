@@ -1,189 +1,191 @@
-# 🎾 The Tennis Rover™ - Autonomous Tennis Ball Collection System
+# 🤖 The Rover™ Platform - Autonomous Multi-Application Robotic Systems
 
-A proprietary robotic platform designed to autonomously collect tennis balls on tennis courts, making practice sessions more efficient and enjoyable. Part of The Rover™ family of autonomous systems.
+A proprietary family of autonomous robotic platforms designed for sports, agriculture, lawn care, and security applications. The Rover systems combine advanced AI, modular hardware, and intelligent navigation to automate repetitive outdoor tasks.
 
-![Robot Status](https://img.shields.io/badge/Status-Prototype-yellow)
+![Platform Status](https://img.shields.io/badge/Status-In%20Development-yellow)
 ![License](https://img.shields.io/badge/License-Proprietary-red)
-![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi-blue)
-![3D Printable](https://img.shields.io/badge/3D%20Printable-Yes-green)
+![Technology](https://img.shields.io/badge/Tech-AI%20Powered-blue)
+![Hardware](https://img.shields.io/badge/Hardware-Modular-green)
 
-## 📐 3D Models
+## 🚀 The Rover Family
 
-The Tennis Rover features fully 3D-printable components designed for standard printers:
+### Current Applications
 
-### Available Models
-- **Complete Robot Assembly** ([tennis-robot.scad](models/tennis-robot.scad)) - Full robot with all components
-- **Printable Parts** ([tennis-robot-printable-parts.scad](models/tennis-robot-printable-parts.scad)) - Individual parts for printing
-- **STL Files** ([View STL](models/stl/)) - Ready-to-print files
+| Application | Documentation | Status | Market |
+|------------|---------------|--------|--------|
+| **The Tennis Rover™** | [Design Specs](docs/the-tennis-rover-design.md) | Prototype | Sports Facilities |
+| **The Lawn Rover™** | [Design Specs](docs/the-lawn-rover-design.md) | Concept | Residential/Commercial |
+| **The Security Rover™** | [Design Specs](docs/the-security-rover-design.md) | Concept | Military/Defense |
+| **The Farm Rover™** | [Coming Soon](docs/) | Planning | Agriculture |
+| **The Golf Rover™** | [Coming Soon](docs/) | Planning | Golf Courses |
 
-### Key Components
-- Modular chassis (fits 220x220mm print bed)
-- Snap-fit assembly system
-- Honeycomb structure for weight reduction
-- TPU flexible parts for ball handling
-- Hot-swappable battery compartments
+### Multi-Application Platform
 
-To view 3D models in VS Code, install the [3D Viewer extension](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-3dviewer).
+See [Multi-Application Platform Overview](docs/multi-application-platform.md) for details on how the core technology adapts across different domains.
 
-## 🚀 Features
+## 🔧 Core Technology Stack
 
-- **Autonomous Navigation**: AI-powered court detection and boundary recognition
-- **Smart Ball Detection**: Distinguishes tennis balls from other objects using computer vision
-- **Dual Operating Modes**:
-  - **Practice Mode**: Continuous collection during individual practice
-  - **Clinic Mode**: Batch collection for tennis classes and group sessions
-- **Solar-Powered**: Integrated solar charging for extended operation
-- **Modular Design**: 3D-printable parts that fit standard 220x220mm print beds
-- **Hot-Swappable Batteries**: No downtime with quick battery changes
+### RoverOS™ Platform
 
-## 📁 Project Structure
+- **RoverVision™**: AI-powered object detection and classification
+- **RoverNav™**: Autonomous navigation with obstacle avoidance
+- **RoverCore™**: Modular hardware interface system
+- **RoverCloud™**: Fleet management and analytics
+- **RoverConnect™**: Mobile app integration
 
-```
-hopper/
-├── docs/                  # Documentation and guides
-│   ├── tennis-ball-robot-design.md
-│   ├── prototype-development-plan.md
-│   ├── prototype-parts-pricing.md
-│   └── multi-application-platform.md
-├── models/               # 3D models and CAD files
-│   ├── tennis-robot.scad
-│   └── tennis-robot-printable-parts.scad
-├── scripts/              # Utility scripts
-│   └── export_stl.sh
-├── snippets/             # VS Code snippets
-└── .vscode/              # VS Code configuration
-```
+### Hardware Platform
 
-## 🛠️ Build Your Own
+- **Modular Design**: Swappable attachments for different applications
+- **Power Systems**: Solar + battery hybrid for extended operation
+- **Compute**: Raspberry Pi 4 or Jetson Nano for edge AI
+- **Sensors**: LiDAR, cameras, ultrasonics, IMU
+- **Actuators**: Application-specific tool modules
 
-### Option 1: Mini Prototype ($95-$210)
-Perfect for proof of concept and testing:
-- 1:10 scale model (20cm x 15cm x 12cm)
-- Desktop-sized for indoor testing
-- Full AI and navigation capabilities
-- [See detailed parts list](docs/prototype-parts-pricing.md)
+## 📁 Repository Structure
 
-### Option 2: Full-Size Robot (~$1,000)
-Professional-grade tennis court robot:
-- Collects 50-100 balls
-- 4-6 hour battery life
-- Weather-resistant design
-- [See full specifications](docs/the-tennis-rover-design.md)
-
-## 🎯 Quick Start
-
-### Prerequisites
-- 3D printer (or access to printing service)
-- Basic electronics skills
-- Raspberry Pi or Arduino
-- Python 3.8+
-
-### 1. Print the Parts
-```bash
-# Export STL files from OpenSCAD
-cd scripts
-./export_stl.sh
+```text
+the-rover-platform/
+├── docs/                           # Application-specific documentation
+│   ├── the-tennis-rover-design.md # Tennis ball collection system
+│   ├── the-lawn-rover-design.md   # Autonomous mowing system
+│   ├── the-security-rover-design.md # Surveillance platform
+│   ├── multi-application-platform.md # Platform overview
+│   ├── prototype-development-plan.md # Development roadmap
+│   └── prototype-parts-pricing.md    # Component costs
+├── models/                         # 3D CAD models
+│   ├── tennis-rover/              # Tennis application models
+│   ├── security-rover/            # Security application models
+│   └── shared/                   # Common platform components
+├── src/                           # Source code (coming soon)
+│   ├── roveros/                  # Core operating system
+│   ├── rovervision/              # Computer vision modules
+│   └── rovernav/                 # Navigation algorithms
+└── hardware/                      # Hardware specifications
+    ├── schematics/               # Electronic designs
+    └── bom/                      # Bills of materials
 ```
 
-### 2. Gather Electronics
-Minimum required:
-- Raspberry Pi Zero 2 W ($15)
-- Camera module ($25)
-- 4x motors with driver ($27)
-- Battery pack ($15)
-- [Full list here](docs/prototype-parts-pricing.md)
+## 🎯 Key Features Across All Rovers
 
-### 3. Assemble & Program
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/hopper.git
-cd hopper
+### Intelligent Operation
+- AI-powered object recognition
+- Autonomous path planning
+- Real-time obstacle avoidance
+- Weather-aware scheduling
+- Energy optimization
 
-# Set up Python environment
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+### Modular Architecture
+- Hot-swappable tool attachments
+- Scalable chassis sizes
+- Universal mounting system
+- Quick-change batteries
+- Field-upgradeable components
 
-# Run the robot
-python src/main.py
-```
+### Advanced Capabilities
+- Multi-unit coordination
+- Cloud-based fleet management
+- Predictive maintenance
+- Performance analytics
+- Remote monitoring
 
-## 💡 Applications Beyond Tennis
+## 💼 Markets & Applications
 
-This platform can be adapted for:
-- **Golf ball collection** on driving ranges
-- **Autonomous lawn mowing** with cutting attachment
-- **Agricultural applications** like hay baling assistance
-- **Snow removal** with plow attachment
-- [See more applications](docs/multi-application-platform.md)
+### Sports & Recreation
+- **Tennis Courts**: Ball collection during practice
+- **Golf Courses**: Range ball retrieval, course maintenance
+- **Sports Complexes**: Multi-sport adaptability
 
-## 📊 Performance Specifications
+### Residential & Commercial
+- **Lawn Care**: Automated mowing and maintenance
+- **Snow Removal**: Winter weather management
+- **Property Security**: Perimeter monitoring
 
-| Metric | Target | Achieved |
-|--------|--------|----------|
-| Ball Detection Accuracy | >95% | TBD |
-| Collection Success Rate | >90% | TBD |
-| Battery Life | 4-6 hours | TBD |
-| Coverage Area | Full tennis court | TBD |
-| Operating Modes | 2 (Practice/Clinic) | ✅ |
+### Agriculture
+- **Field Management**: Crop monitoring and treatment
+- **Harvesting Support**: Fruit/vegetable collection
+- **Livestock**: Feed distribution and monitoring
 
-## 🤝 Contributing
+### Defense & Security
+- **Base Security**: Autonomous patrol systems
+- **Perimeter Defense**: 24/7 surveillance
+- **Hazardous Areas**: Remote inspection capability
 
-We welcome contributions! Whether you're interested in:
-- Improving the AI detection algorithms
-- Designing better 3D-printable parts
-- Adding new features or sensors
-- Testing and documenting builds
-- Adapting for other sports/applications
+## 🏗️ Development Roadmap
 
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+### Phase 1: Core Platform (Q1-Q2 2024)
+- ✅ Conceptual design
+- ✅ 3D CAD models
+- ✅ Documentation
+- 🔄 Prototype development
+- ⏳ RoverOS development
 
-## 📈 ROI Analysis
+### Phase 2: Tennis Rover (Q3 2024)
+- ⏳ Field testing
+- ⏳ AI training
+- ⏳ User trials
+- ⏳ Production design
 
-For tennis clubs and facilities:
-- **Manual ball collection cost**: ~$15,000/year
-- **Robot investment**: $1,000
-- **Payback period**: < 2 months
-- **Annual savings**: $14,000+
+### Phase 3: Platform Expansion (Q4 2024 - Q1 2025)
+- ⏳ Lawn Rover development
+- ⏳ Security Rover development
+- ⏳ Farm Rover planning
+- ⏳ Golf Rover planning
 
-## 🎓 Educational Use
+## 📊 Prototype Development
 
-Perfect for:
-- Robotics courses
-- STEM education
-- Engineering projects
-- AI/Computer vision learning
-- Maker spaces
+For those interested in building prototypes:
+- [Prototype Development Plan](docs/prototype-development-plan.md)
+- [Parts List & Pricing](docs/prototype-parts-pricing.md)
+- [Assembly Instructions](docs/prototype-assembly-instructions.md)
+- [The Rover Brand Guidelines](docs/the-rover-brand.md)
 
-## 📝 License
+## 💰 Investment & ROI
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Example: Tennis Facility
+- **Manual Collection Cost**: $15,000/year
+- **Tennis Rover Investment**: $3,000
+- **ROI Period**: 2-3 months
+- **Annual Savings**: $12,000+
 
-## 🙏 Acknowledgments
+### Licensing Models
+- **Direct Purchase**: One-time hardware cost
+- **RaaS (Robot-as-a-Service)**: Monthly subscription
+- **Enterprise Fleet**: Volume licensing
+- **OEM Partnership**: Technology licensing
 
-- OpenSCAD community for 3D modeling tools
-- ROS2 for robotics framework
-- TensorFlow team for AI models
-- Tennis community for feedback and testing
+## 📄 Licensing
+
+This software and hardware designs are proprietary and confidential. No license is granted for use, modification, or distribution without express written permission from The Rover Project.
+
+**For licensing inquiries**: licensing@theroverproject.com
+
+## ⚖️ Legal
+
+© 2024 The Rover Project. All Rights Reserved.
+
+**Patent Pending** - This technology may be covered by one or more patents or patent applications.
+
+**Trademarks**: The Rover™, RoverOS™, RoverVision™, RoverNav™, RoverCore™, RoverCloud™, RoverConnect™, and all associated logos are trademarks of The Rover Project.
+
+## 🏢 About The Rover Project
+
+The Rover Project develops cutting-edge autonomous robotic solutions that transform how repetitive outdoor tasks are performed. Our mission is to increase efficiency, reduce costs, and improve safety across multiple industries through intelligent automation.
+
+### Core Values
+- **Innovation**: Pushing the boundaries of robotics and AI
+- **Reliability**: Building systems that work in real-world conditions
+- **Modularity**: Creating adaptable solutions for diverse needs
+- **Sustainability**: Solar-powered, environmentally conscious design
 
 ## 📬 Contact
 
-- **Project Lead**: [Your Name]
-- **Email**: your.email@example.com
-- **Discord**: [Join our community](https://discord.gg/rover)
-- **Issues**: [Report bugs](https://github.com/theroverproject/tennis-tennis-rover/issues)
-
-## 🚧 Development Status
-
-- [x] Conceptual design
-- [x] 3D models created
-- [x] Parts list compiled
-- [x] Documentation written
-- [ ] Prototype built
-- [ ] Field testing
-- [ ] AI training
-- [ ] Production ready
+- **Website**: www.theroverproject.com
+- **General Inquiries**: info@theroverproject.com
+- **Licensing**: licensing@theroverproject.com
+- **Technical Support**: support@theroverproject.com
+- **Partnerships**: partners@theroverproject.com
+- **Media**: press@theroverproject.com
 
 ---
 
-**Start building your tennis ball robot today!** 🎾🤖
+**The Rover™ - Revolutionizing Outdoor Automation** 🤖🌍
