@@ -273,16 +273,231 @@ Public space maintenance for parks and recreational areas.
 ### Technology Extensions
 
 #### RoverDrone Family - Specialized Aerial Companions
-- **RoverDrone Security** - Perimeter patrol, surveillance, threat detection ($3,000-5,000)
-- **RoverDrone Inspect** - Infrastructure inspection, crop monitoring, damage assessment ($4,000-7,000)  
-- **RoverDrone Herd** - Livestock guidance, animal tracking, pasture monitoring ($2,500-4,000)
-- **RoverDrone Search** - Search & rescue, missing person location, emergency response ($5,000-8,000)
-- **RoverDrone Survey** - Mapping, progress monitoring, data collection ($3,500-6,000)
+
+##### RoverDrone Security ($3,000-5,000)
+**Mission**: Perimeter patrol, surveillance, threat detection, and coordinated security operations
+
+**Core Specifications**:
+- **Flight Time**: 45-60 minutes per charge
+- **Range**: 2km radius from base station
+- **Speed**: 15-25 km/h patrol, 50 km/h response
+- **Payload**: 2kg sensor suite
+- **Weather**: IP65, operates in rain/snow
+- **Noise**: <55dB (whisper-quiet operation)
+
+**Sensor Suite**:
+- **Thermal Camera**: FLIR 640x480, detects heat signatures 200m
+- **4K Visible Camera**: 30x optical zoom, license plate readable at 100m  
+- **Motion Detection**: AI-powered human/vehicle classification
+- **Audio Array**: Directional microphones, gunshot detection
+- **Spotlight**: 3000 lumen LED, motion-activated
+- **Chemical Sensors**: Basic drug/explosive vapor detection
+
+**AI Capabilities**:
+- **Facial Recognition**: Database comparison for known threats
+- **Behavioral Analysis**: Detect suspicious activity patterns  
+- **Crowd Monitoring**: Track group movements, density analysis
+- **Vehicle Tracking**: License plate recognition, path following
+- **Perimeter Breach**: Instant alerts for unauthorized entry
+- **Coordination**: Real-time data sharing with ground security rovers
+
+**Applications**:
+- School campus monitoring during dismissal/events
+- Commercial property perimeter patrol
+- Residential community security
+- Event security and crowd control
+- Emergency response coordination
+- Night security operations
+
+##### RoverDrone Inspect ($4,000-7,000)
+**Mission**: Infrastructure inspection, crop monitoring, damage assessment, and maintenance planning
+
+**Core Specifications**:
+- **Flight Time**: 60-90 minutes (extended battery)
+- **Range**: 5km radius (long-range operations)
+- **Precision**: ±5cm GPS positioning 
+- **Payload**: 3kg inspection equipment
+- **Weather**: IP67, wind resistance to 25 km/h
+- **Data Storage**: 1TB onboard, real-time streaming
+
+**Sensor Suite**:
+- **High-Resolution Camera**: 42MP, macro lens capability
+- **Multispectral Imaging**: 12-band agricultural analysis
+- **Thermal Imaging**: Building heat loss, electrical faults
+- **LIDAR**: 3D structure mapping, precise measurements
+- **Ground Penetrating Radar**: Subsurface analysis
+- **Gas Sensors**: Leak detection (methane, CO, industrial)
+- **UV Camera**: Solar panel efficiency analysis
+
+**AI Capabilities**:
+- **Crop Health Analysis**: Disease detection, yield prediction
+- **Structural Assessment**: Crack detection, wear analysis
+- **Thermal Anomalies**: Equipment overheating, energy loss
+- **Growth Monitoring**: Plant development tracking
+- **Damage Quantification**: Insurance claim documentation
+- **Predictive Maintenance**: Failure probability calculation
+
+**Applications**:
+- Agricultural crop health monitoring
+- Solar panel efficiency inspection
+- Roof and building exterior assessment
+- Power line and tower inspection
+- Bridge and infrastructure monitoring
+- Post-storm damage assessment
+
+##### RoverDrone Herd ($2,500-4,000)
+**Mission**: Livestock guidance, animal tracking, pasture monitoring, and ranch operations
+
+**Core Specifications**:
+- **Flight Time**: 30-45 minutes (frequent recharge cycles)
+- **Range**: 1km radius (close livestock work)
+- **Speed**: 5-40 km/h (variable for animal comfort)
+- **Payload**: 1.5kg specialized equipment
+- **Weather**: IP65, dust/mud resistant
+- **Noise**: Ultra-quiet <50dB to avoid startling animals
+
+**Sensor Suite**:
+- **Animal Recognition Camera**: Individual animal identification
+- **Behavioral Monitor**: Stress/health indicator detection
+- **Thermal Imaging**: Body temperature monitoring
+- **Audio Analysis**: Distress call recognition
+- **RFID Reader**: Electronic tag identification
+- **Pasture Camera**: Grass condition monitoring
+
+**Herding Equipment**:
+- **LED Guidance System**: Directional light patterns
+- **Audio Cues**: Customizable herding sounds
+- **Scent Dispensers**: Pheromone-based guidance
+- **Virtual Fencing**: GPS boundary enforcement
+- **Emergency Beacon**: Predator deterrent strobe/siren
+
+**AI Capabilities**:
+- **Animal Behavior Prediction**: Movement pattern analysis
+- **Health Monitoring**: Early illness detection
+- **Grazing Optimization**: Pasture rotation planning
+- **Predator Detection**: Wildlife threat identification
+- **Breeding Management**: Estrus cycle tracking
+- **Feed Efficiency**: Consumption pattern analysis
+
+**Applications**:
+- Cattle herding and movement
+- Sheep flock management
+- Predator deterrent operations
+- Animal health monitoring
+- Pasture condition assessment
+- Feed distribution coordination
+
+##### RoverDrone Search ($5,000-8,000)
+**Mission**: Search & rescue, missing person location, emergency response, and disaster coordination
+
+**Core Specifications**:
+- **Flight Time**: 90-120 minutes (emergency duration)
+- **Range**: 10km radius (wide search area)
+- **Speed**: 60 km/h (rapid deployment)
+- **Payload**: 4kg rescue equipment
+- **Weather**: All-weather capable, storm-rated
+- **Communications**: Satellite uplink, mesh networking
+
+**Sensor Suite**:
+- **Thermal Imaging**: Body heat detection through foliage
+- **High-Resolution Camera**: Person identification at distance
+- **Night Vision**: Infrared illumination system  
+- **Audio Sensors**: Call-for-help detection
+- **Cell Phone Detector**: Mobile signal triangulation
+- **Scent Analysis**: Chemical signature tracking
+- **Ground Penetrating Radar**: Buried object detection
+
+**Rescue Equipment**:
+- **Emergency Beacon**: GPS location marker
+- **Supply Drop**: Water, food, medical supplies (2kg)
+- **Communication Relay**: Two-way radio system
+- **Thermal Blanket**: Emergency shelter deployment
+- **Flare Launcher**: Visual signal system
+- **Medical Sensors**: Vital sign monitoring
+
+**AI Capabilities**:
+- **Pattern Recognition**: Human vs animal heat signatures
+- **Search Optimization**: Area coverage algorithms
+- **Survival Prediction**: Time-critical prioritization
+- **Terrain Analysis**: Accessibility for ground rescue
+- **Weather Impact**: Search condition assessment
+- **Coordination**: Multi-drone swarm operations
+
+**Applications**:
+- Wilderness search and rescue
+- Missing person location
+- Disaster response operations
+- Emergency supply delivery
+- Mountain rescue coordination
+- Maritime search operations
+
+##### RoverDrone Survey ($3,500-6,000)
+**Mission**: Mapping, progress monitoring, data collection, and analytical reconnaissance
+
+**Core Specifications**:
+- **Flight Time**: 75-90 minutes (data collection endurance)
+- **Range**: 8km radius (survey coverage)
+- **Precision**: RTK GPS ±2cm accuracy
+- **Payload**: 2.5kg surveying equipment
+- **Weather**: IP66, temperature -20°C to +50°C
+- **Data Rate**: 100MB/s real-time processing
+
+**Sensor Suite**:
+- **Survey Camera**: 50MP, photogrammetry optimized
+- **LIDAR Scanner**: 1 million points/second, 200m range
+- **Magnetometer**: Mineral detection, archaeological survey
+- **Radiation Detector**: Environmental monitoring
+- **Air Quality Sensors**: Pollution, allergen detection
+- **Bathymetric Sonar**: Water depth measurement
+- **Hyperspectral Camera**: Material composition analysis
+
+**Survey Capabilities**:
+- **3D Modeling**: Real-time terrain reconstruction
+- **Volume Calculation**: Stockpile, excavation measurement
+- **Progress Tracking**: Construction site monitoring  
+- **Environmental Monitoring**: Ecosystem health assessment
+- **Archaeological Survey**: Site documentation, artifact location
+- **Mining Operations**: Resource exploration, safety monitoring
+
+**AI Capabilities**:
+- **Change Detection**: Time-series analysis
+- **Pattern Recognition**: Geological feature identification
+- **Anomaly Detection**: Unusual formations, conditions
+- **Classification**: Automatic object/material categorization
+- **Predictive Modeling**: Environmental trend analysis
+- **Quality Assessment**: Construction compliance verification
+
+**Applications**:
+- Construction site progress monitoring
+- Mining and quarry operations
+- Environmental impact assessment
+- Archaeological site documentation
+- Real estate property surveying
+- Agricultural field mapping
+
+#### Ground-Air Coordination Systems
+
+##### Integrated Operations
+**RoverDrone + Ground Rover Teams**:
+- **Security Team**: Ground rover patrols + aerial surveillance coverage
+- **Agricultural Team**: Ground rover crop management + drone health monitoring  
+- **Search Team**: Ground rover tracking + aerial wide-area search
+- **Inspection Team**: Ground rover access + drone elevated inspection
+- **Survey Team**: Ground rover markers + aerial mapping coverage
+
+##### Fleet Management
+**RoverFleet Coordination**:
+- **Autonomous Handoffs**: Seamless coverage transitions
+- **Shared Intelligence**: Real-time data fusion between units
+- **Swarm Operations**: Multiple drones coordinate with single ground rover
+- **Emergency Response**: Automatic drone deployment when rover needs assistance
+- **Battery Management**: Coordinated charging schedules for continuous operation
 
 #### Support Infrastructure
-- **RoverDock** - Universal charging stations with platform-specific tool storage
-- **RoverHub** - Central control systems for fleet coordination  
-- **RoverFleet** - Multi-unit coordination and swarm intelligence
+- **RoverDock Pro** - Universal charging with drone landing pads and tool storage
+- **RoverHub Command** - Central control systems managing ground-air fleet coordination  
+- **RoverFleet AI** - Multi-unit coordination and swarm intelligence algorithms
+- **RoverCloud Extended** - Aerial data integration and flight path optimization
 
 ## Implementation Guidelines
 
