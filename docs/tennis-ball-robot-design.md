@@ -1,9 +1,9 @@
-# Tennis Ball Collecting Robot - Design Specifications
+# The Tennis Rover - Design Specifications
 
 ## Project Overview
-An autonomous robot "dog" designed to collect tennis balls on tennis courts during practice sessions and clinics. The robot operates only when points are finished, can hold multiple balls, and delivers them to players or deposits them in storage bins.
+**The Tennis Rover** is an autonomous robotic platform designed to collect tennis balls on tennis courts during practice sessions and clinics. Part of **The Rover** family of multi-application autonomous systems, The Tennis Rover operates only when points are finished, can hold multiple balls, and delivers them to players or deposits them in storage bins.
 
-## Operating Modes
+## The Tennis Rover Operating Modes
 
 ### Mode 1: Practice Mode
 - Continuous collection during individual practice
@@ -98,7 +98,7 @@ An autonomous robot "dog" designed to collect tennis balls on tennis courts duri
 
 #### Computing Platform
 - **Main CPU**: Raspberry Pi 4 (8GB RAM)
-- **Operating System**: ROS2 for modular control
+- **Operating System**: RoverOS (based on ROS2) for modular control
 - **Storage**: 32GB microSD for OS and models
 - **Vision**: Pi Camera Module v2 for ball detection
 
@@ -120,37 +120,38 @@ An autonomous robot "dog" designed to collect tennis balls on tennis courts duri
   - Microphones for game state detection
 - **Power**: INA219 for battery monitoring
 
-### Software Architecture
+### Software Architecture - RoverOS Tennis Edition
 
-#### Core Modules
-1. **Vision Pipeline** (30Hz)
+#### Core RoverOS Modules
+1. **RoverVision Pipeline** (30Hz)
    - Ball detection using YOLO/MobileNet
    - Player position tracking
    - Court line detection
    
-2. **Navigation Stack** (10Hz)
+2. **RoverNav Stack** (10Hz)
    - Path planning algorithms
    - Obstacle avoidance
    - Position estimation
    
-3. **State Machine**
+3. **RoverTask State Machine**
    - Practice mode controller
    - Clinic mode controller
    - Charging mode controller
    
-4. **Hardware Interface**
+4. **RoverCore Hardware Interface**
    - Motor control (50Hz)
-   - Sensor integration
-   - Power management
+   - RoverSense sensor integration
+   - RoverPower management
 
-#### AI Training Requirements
+#### RoverAI Training Requirements
 - **Data Collection**: 
   - Tennis ball images in various lighting
   - Court footage from robot perspective
   - Player movement patterns
-- **Models**: 
+- **RoverAI Models**: 
   - TensorFlow Lite for edge deployment
   - OpenCV for court detection
+  - Custom tennis ball classifier
 - **Training Phases**:
   1. Static ball detection
   2. Movement and collection
@@ -193,7 +194,7 @@ An autonomous robot "dog" designed to collect tennis balls on tennis courts duri
 - **Hardware & Misc**: $50-100
 - **Total Estimated Cost**: $750-1,060
 
-## Performance Specifications
+## The Tennis Rover Performance Specifications
 
 ### Operating Parameters
 - **Speed**: 1.5 m/s maximum
@@ -228,10 +229,10 @@ An autonomous robot "dog" designed to collect tennis balls on tennis courts duri
 - **Protective Bumpers**: TPU bumpers on all impact zones
 - **Fail-Safe Mode**: Returns to charging dock on system errors
 
-## Future Enhancements
+## The Tennis Rover Future Enhancements
 - Voice command integration
-- Mobile app for remote control
-- Multiple robot coordination for large clinics
+- RoverConnect mobile app for remote control
+- Multiple Tennis Rover coordination for large clinics (RoverFleet)
 - Advanced ball trajectory prediction
 - Integration with court booking systems
 - Performance analytics for players
@@ -309,7 +310,7 @@ module honeycomb_frame(length, width, height) {
 }
 ```
 
-### Recommended Workflow for Robot Components
+### Recommended Workflow for Rover Components
 
 1. **Design Phase**:
    - Model solid structure in Fusion 360/FreeCAD

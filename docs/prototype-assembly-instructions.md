@@ -1,7 +1,7 @@
-# 1:10 Scale Tennis Ball Robot Prototype - Assembly Instructions
+# The Tennis Rover Mini - 1:10 Scale Prototype Assembly Instructions
 
 ## Overview
-Complete functional prototype at 1:10 scale for testing on a miniature tennis court. The robot can collect 6.7mm diameter mini tennis balls and navigate a 2.4m x 0.8m scaled court.
+**The Tennis Rover Mini** is a complete functional prototype at 1:10 scale for testing The Rover platform technology. This miniature version of The Tennis Rover can collect 6.7mm diameter mini tennis balls and navigate a 2.4m x 0.8m scaled court, demonstrating all core RoverOS capabilities.
 
 ## Parts List & Print Settings
 

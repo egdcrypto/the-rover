@@ -7,6 +7,24 @@ An open-source robotic system designed to autonomously collect tennis balls on t
 ![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi-red)
 ![3D Printable](https://img.shields.io/badge/3D%20Printable-Yes-blue)
 
+## 📐 3D Models
+
+The Tennis Rover features fully 3D-printable components designed for standard printers:
+
+### Available Models
+- **Complete Robot Assembly** ([tennis-robot.scad](models/tennis-robot.scad)) - Full robot with all components
+- **Printable Parts** ([tennis-robot-printable-parts.scad](models/tennis-robot-printable-parts.scad)) - Individual parts for printing
+- **STL Files** ([View STL](models/stl/)) - Ready-to-print files
+
+### Key Components
+- Modular chassis (fits 220x220mm print bed)
+- Snap-fit assembly system
+- Honeycomb structure for weight reduction
+- TPU flexible parts for ball handling
+- Hot-swappable battery compartments
+
+To view 3D models in VS Code, install the [3D Viewer extension](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-3dviewer).
+
 ## 🚀 Features
 
 - **Autonomous Navigation**: AI-powered court detection and boundary recognition

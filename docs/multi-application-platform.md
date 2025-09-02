@@ -1,24 +1,24 @@
-# Multi-Application Autonomous Platform
+# The Rover - Multi-Application Autonomous Platform
 
 ## Overview
-The core technology developed for the tennis ball collecting robot can be adapted for various agricultural and maintenance applications that require systematic grid-based operation, object detection, and autonomous navigation.
+**The Rover** is a versatile autonomous platform that adapts to various agricultural and maintenance applications. Originally developed as The Tennis Rover for ball collection, the core technology extends to multiple domains requiring systematic grid-based operation, object detection, and autonomous navigation.
 
 ## Core Platform Capabilities
 
-### Shared Technology Stack
-1. **AI Vision System**
+### Shared Rover Technology Stack
+1. **RoverVision System**
    - Object detection and classification
    - Boundary recognition
    - Obstacle avoidance
    - Pattern recognition
 
-2. **Autonomous Navigation**
+2. **RoverNav Autonomous Navigation**
    - GPS + IMU positioning
    - Grid-based coverage algorithms
    - Efficient path planning
    - Terrain adaptation
 
-3. **Modular Hardware Platform**
+3. **RoverBase Modular Hardware Platform**
    - Swappable tool attachments
    - Scalable chassis design
    - Solar + battery power system
@@ -26,7 +26,7 @@ The core technology developed for the tennis ball collecting robot can be adapte
 
 ## Application Profiles
 
-### 1. Autonomous Lawn Mower
+### 1. The Lawn Rover
 
 #### Specifications
 - **Coverage Area**: 1-5 acres
@@ -58,7 +58,7 @@ Detection Targets:
 - Slope and terrain analysis
 - Energy-efficient route planning
 
-### 2. Agricultural Hay Baler Assistant
+### 2. The Farm Rover
 
 #### Specifications
 - **Field Size**: 10-100 acres
@@ -90,7 +90,7 @@ Vision Tasks:
 - Field efficiency metrics
 - Historical productivity data
 
-### 3. Orchard/Vineyard Management Robot
+### 3. The Vineyard Rover
 
 #### Specifications
 - **Row Width**: 2-4m adjustable
@@ -116,7 +116,7 @@ Detection Models:
 - Weed identification
 ```
 
-### 4. Golf Course Maintenance
+### 4. The Golf Rover
 
 #### Specifications
 - **Coverage**: Greens, fairways, rough
@@ -138,7 +138,7 @@ Detection Models:
 - Sand trap maintenance
 - Cart path monitoring
 
-### 5. Snow Removal Robot
+### 5. The Snow Rover
 
 #### Specifications
 - **Clearing Width**: 0.5-1.5m
@@ -165,9 +165,9 @@ Detection Requirements:
 
 ## Modular Attachment System
 
-### Universal Mounting Platform
+### RoverBase Universal Mounting Platform
 ```
-Base Platform Components:
+RoverBase Platform Components:
 ├── Power Interface (24-48V)
 ├── Control Bus (CAN/RS485)
 ├── Mechanical Mount Points
@@ -177,25 +177,25 @@ Base Platform Components:
 
 ### Swappable Modules
 
-#### Collection Module (Tennis/Golf)
+#### RoverCollect Module (Tennis/Golf)
 - Scoop mechanism
 - Ball identification
 - Storage basket
 - Transfer system
 
-#### Cutting Module (Mowing)
+#### RoverCut Module (Mowing)
 - Rotating blades
 - Height adjustment
 - Mulching attachment
 - Grass collection
 
-#### Manipulation Module (Harvesting)
+#### RoverHarvest Module (Harvesting)
 - Robotic arm
 - Grippers/cutters
 - Gentle handling
 - Sorting mechanism
 
-#### Treatment Module (Spraying)
+#### RoverSpray Module (Spraying)
 - Spray nozzles
 - Tank system
 - Precision application
