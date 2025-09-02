@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 3D Printing
+*.gcode
+*.stl
+*.3mf
+build/
+temp/
+
+# Electronics
+*.hex
+*.elf
+.pio/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Documentation
+docs/build/
+site/
+
+# Project specific
+data/
+models/weights/
+*.ckpt
+*.pth
+*.h5
+
+# Temporary files
+*.tmp
+*.bak
+.cache/
+
+# Secrets
+.env
+config/secrets.yaml
+*.key
+*.pem
