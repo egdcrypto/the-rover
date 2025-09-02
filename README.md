@@ -17,7 +17,9 @@ A proprietary family of autonomous robotic platforms designed for diverse applic
 | **⛳ The Golf Rover™** | Golf ball collection + mowing | [Full Specs](docs/the-golf-rover-design.md) | Design | Golf courses |
 | **🌱 The Lawn Rover™** | Autonomous lawn maintenance | [Full Specs](docs/the-lawn-rover-design.md) | Concept | Residential/Commercial |
 | **🛡️ The Security Rover™** | 24/7 patrol & surveillance | [Full Specs](docs/the-security-rover-design.md) | Concept | Defense/Security |
+| **🔒 The Security Rover Mini™** | Affordable residential security | [Full Specs](docs/the-security-rover-mini.md) | Concept | Homes/Small Business |
 | **🎓 The School Rover™** | Campus safety & threat prevention | [Full Specs](docs/the-school-rover-design.md) | Priority | Schools/Universities |
+| **🔍 The Search Rover™** | Search and rescue operations | [Full Specs](docs/the-search-rover-design.md) | Concept | Emergency Services |
 | **🐄 The Herding Rover™** | Livestock management | [Full Specs](docs/the-herding-rover-design.md) | Planning | Farms/Ranches |
 | **🌾 The Farm Rover™** | Agricultural operations | [Coming Soon](docs/) | Planning | Agriculture |
 | **❄️ The Snow Rover™** | Snow removal & ice management | [In Docs](docs/multi-application-platform.md) | Planning | Winter services |
@@ -61,15 +63,20 @@ A proprietary family of autonomous robotic platforms designed for diverse applic
 - **Multi-Sport**: Adaptable for various ball sports
 
 ### Lawn & Landscape
+- **Complete Care**: Mowing, trimming, edging, and blowing in one unit
 - **Residential**: Maintains lawns up to 5 acres
 - **Commercial**: Fleet coordination for large properties
+- **Precision Edging**: 1-2cm accuracy along sidewalks and beds
+- **Debris Management**: Smart blowing to designated zones
 - **Patterns**: Stripes, checkerboard, custom designs
 
-### Security & Surveillance
+### Security & Safety
+- **School Protection**: Weapon/drug detection, behavioral analysis
 - **Night Vision**: Thermal + IR cameras for 24/7 operation
-- **Tank Chassis**: Rugged all-terrain capability
-- **AI Threat Detection**: Distinguish humans, animals, vehicles
-- **Non-Lethal**: Observation and deterrence only
+- **Chemical Detection**: Drugs and explosives trace detection
+- **AI Threat Detection**: Distinguish humans, animals, vehicles, weapons
+- **Residential Security**: Affordable Mini variant for homes
+- **Search & Rescue**: Missing person and disaster response
 
 ### Agriculture & Livestock
 - **Herding**: Humane livestock management using behavior AI
@@ -90,8 +97,11 @@ the-rover/
 ├── docs/                              # Complete documentation
 │   ├── the-tennis-rover-design.md    # Tennis ball collection
 │   ├── the-golf-rover-design.md      # Golf course management
-│   ├── the-lawn-rover-design.md      # Lawn maintenance
-│   ├── the-security-rover-design.md  # Security patrol
+│   ├── the-lawn-rover-design.md      # Complete lawn care system
+│   ├── the-security-rover-design.md  # Professional security patrol
+│   ├── the-security-rover-mini.md    # Residential security
+│   ├── the-school-rover-design.md    # Campus safety system
+│   ├── the-search-rover-design.md    # Search and rescue
 │   ├── the-herding-rover-design.md   # Livestock management
 │   ├── rover-map-platform.md         # Cloud mapping system
 │   ├── multi-application-platform.md # Platform overview
@@ -168,7 +178,9 @@ the-rover/
 | Golf course maintenance | $105,000 | $35,000 | 6-8 months |
 | Lawn service (5 acres) | $5,900 | $4,500 | 8-10 months |
 | Security patrol | $80,000 | $12,000 | 2-3 months |
+| Residential security | $3,600 | $2,000 | 7 months |
 | School safety officer | $60,000 | $25,000 | 5 months |
+| Search & rescue K9 | $45,000 | $15,000 | 4 months |
 | Livestock herding | $50,000 | $25,000 | 6 months |
 
 ## 🏗️ Development Status
@@ -176,8 +188,11 @@ the-rover/
 ### Available Now (Prototype/Design Phase)
 - Tennis Rover (1:10 scale prototype ready)
 - Golf Rover (comprehensive design complete)
-- Security Rover (tank chassis designed)
-- Lawn Rover (specifications complete)
+- Lawn Rover (complete with trimming/blowing specs)
+- Security Rover (chemical detection integrated)
+- Security Rover Mini (residential design complete)
+- School Rover (threat prevention system designed)
+- Search Rover (rescue capabilities defined)
 - Herding Rover (behavior AI designed)
 
 ### In Development
