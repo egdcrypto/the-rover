@@ -1,6 +1,6 @@
 # 🤖 The Rover™ Platform - Autonomous Multi-Application Robotic Systems
 
-A proprietary family of autonomous robotic platforms designed for sports, agriculture, lawn care, and security applications. The Rover systems combine advanced AI, modular hardware, and intelligent navigation to automate repetitive outdoor tasks.
+A proprietary family of autonomous robotic platforms designed for diverse applications across sports, agriculture, security, maintenance, and livestock management. The Rover systems combine advanced AI, modular hardware, and intelligent navigation to automate repetitive outdoor and indoor tasks.
 
 ![Platform Status](https://img.shields.io/badge/Status-In%20Development-yellow)
 ![License](https://img.shields.io/badge/License-Proprietary-red)
@@ -9,153 +9,197 @@ A proprietary family of autonomous robotic platforms designed for sports, agricu
 
 ## 🚀 The Rover Family
 
-### Current Applications
+### Complete Product Line
 
-| Application | Documentation | Status | Market |
-|------------|---------------|--------|--------|
-| **The Tennis Rover™** | [Design Specs](docs/the-tennis-rover-design.md) | Prototype | Sports Facilities |
-| **The Lawn Rover™** | [Design Specs](docs/the-lawn-rover-design.md) | Concept | Residential/Commercial |
-| **The Security Rover™** | [Design Specs](docs/the-security-rover-design.md) | Concept | Military/Defense |
-| **The Farm Rover™** | [Coming Soon](docs/) | Planning | Agriculture |
-| **The Golf Rover™** | [Coming Soon](docs/) | Planning | Golf Courses |
+| Rover Type | Application | Documentation | Status | Primary Market |
+|------------|-------------|---------------|--------|----------------|
+| **🎾 The Tennis Rover™** | Tennis ball collection | [Full Specs](docs/the-tennis-rover-design.md) | Prototype | Tennis facilities |
+| **⛳ The Golf Rover™** | Golf ball collection + mowing | [Full Specs](docs/the-golf-rover-design.md) | Design | Golf courses |
+| **🌱 The Lawn Rover™** | Autonomous lawn maintenance | [Full Specs](docs/the-lawn-rover-design.md) | Concept | Residential/Commercial |
+| **🛡️ The Security Rover™** | 24/7 patrol & surveillance | [Full Specs](docs/the-security-rover-design.md) | Concept | Defense/Security |
+| **🐄 The Herding Rover™** | Livestock management | [Full Specs](docs/the-herding-rover-design.md) | Planning | Farms/Ranches |
+| **🌾 The Farm Rover™** | Agricultural operations | [Coming Soon](docs/) | Planning | Agriculture |
+| **❄️ The Snow Rover™** | Snow removal & ice management | [In Docs](docs/multi-application-platform.md) | Planning | Winter services |
+| **🍇 The Vineyard Rover™** | Orchard/vineyard management | [In Docs](docs/multi-application-platform.md) | Planning | Vineyards |
+| **🏢 The Property Rover™** | Commercial maintenance | [Coming Soon](docs/) | Planning | Property management |
+| **🧹 The Vacuum Rover™** | Indoor/outdoor cleaning | Coming Soon | Planning | Facilities |
 
-### Multi-Application Platform
+### Platform Overview
 
-See [Multi-Application Platform Overview](docs/multi-application-platform.md) for details on how the core technology adapts across different domains.
+- **[Multi-Application Platform](docs/multi-application-platform.md)** - How one platform serves all markets
+- **[RoverMap Cloud Platform](docs/rover-map-platform.md)** - Shared mapping & intelligence system
+- **[Brand Guidelines](docs/the-rover-brand.md)** - Complete brand identity
 
 ## 🔧 Core Technology Stack
 
-### RoverOS™ Platform
+### RoverOS™ Ecosystem
 
-- **RoverVision™**: AI-powered object detection and classification
+#### Core Systems
+- **RoverOS™**: Unified operating system across all variants
+- **RoverVision™**: AI-powered detection and classification
 - **RoverNav™**: Autonomous navigation with obstacle avoidance
+- **RoverMap™**: Cloud-based mapping and intelligence sharing
 - **RoverCore™**: Modular hardware interface system
 - **RoverCloud™**: Fleet management and analytics
 - **RoverConnect™**: Mobile app integration
+- **RoverAI™**: Machine learning framework
 
-### Hardware Platform
+#### Modular Attachments
+- **RoverCollect™**: Ball/object collection systems
+- **RoverCut™**: Precision cutting modules
+- **RoverSpray™**: Treatment application systems
+- **RoverHarvest™**: Picking and gathering tools
+- **RoverSense™**: Advanced sensor suites
+- **RoverPower™**: Solar and battery systems
 
-- **Modular Design**: Swappable attachments for different applications
-- **Power Systems**: Solar + battery hybrid for extended operation
-- **Compute**: Raspberry Pi 4 or Jetson Nano for edge AI
-- **Sensors**: LiDAR, cameras, ultrasonics, IMU
-- **Actuators**: Application-specific tool modules
+## 📊 Key Capabilities by Application
+
+### Sports & Recreation
+- **Tennis**: Collects 100+ balls autonomously during practice
+- **Golf**: Retrieves range balls + maintains greens at 2.5-4mm precision
+- **Multi-Sport**: Adaptable for various ball sports
+
+### Lawn & Landscape
+- **Residential**: Maintains lawns up to 5 acres
+- **Commercial**: Fleet coordination for large properties
+- **Patterns**: Stripes, checkerboard, custom designs
+
+### Security & Surveillance
+- **Night Vision**: Thermal + IR cameras for 24/7 operation
+- **Tank Chassis**: Rugged all-terrain capability
+- **AI Threat Detection**: Distinguish humans, animals, vehicles
+- **Non-Lethal**: Observation and deterrence only
+
+### Agriculture & Livestock
+- **Herding**: Humane livestock management using behavior AI
+- **Virtual Fencing**: GPS boundaries without physical fences
+- **Health Monitoring**: Continuous animal observation
+- **Crop Management**: Planting, monitoring, harvesting support
+
+### Specialized Operations
+- **Snow Removal**: Autonomous winter maintenance
+- **Vacuum Cleaning**: Indoor/outdoor debris collection
+- **Package Delivery**: Last-mile autonomous delivery
+- **Emergency Response**: Disaster area assessment
 
 ## 📁 Repository Structure
 
 ```text
-the-rover-platform/
-├── docs/                           # Application-specific documentation
-│   ├── the-tennis-rover-design.md # Tennis ball collection system
-│   ├── the-lawn-rover-design.md   # Autonomous mowing system
-│   ├── the-security-rover-design.md # Surveillance platform
+the-rover/
+├── docs/                              # Complete documentation
+│   ├── the-tennis-rover-design.md    # Tennis ball collection
+│   ├── the-golf-rover-design.md      # Golf course management
+│   ├── the-lawn-rover-design.md      # Lawn maintenance
+│   ├── the-security-rover-design.md  # Security patrol
+│   ├── the-herding-rover-design.md   # Livestock management
+│   ├── rover-map-platform.md         # Cloud mapping system
 │   ├── multi-application-platform.md # Platform overview
-│   ├── prototype-development-plan.md # Development roadmap
-│   └── prototype-parts-pricing.md    # Component costs
-├── models/                         # 3D CAD models
-│   ├── tennis-rover/              # Tennis application models
-│   ├── security-rover/            # Security application models
-│   └── shared/                   # Common platform components
-├── src/                           # Source code (coming soon)
-│   ├── roveros/                  # Core operating system
-│   ├── rovervision/              # Computer vision modules
-│   └── rovernav/                 # Navigation algorithms
-└── hardware/                      # Hardware specifications
-    ├── schematics/               # Electronic designs
-    └── bom/                      # Bills of materials
+│   └── the-rover-brand.md            # Brand guidelines
+├── models/                            # 3D CAD models
+│   ├── tennis-rover/                  # Tennis-specific designs
+│   │   ├── prototype-detailed.scad   # 1:10 scale prototype
+│   │   ├── tennis-robot.scad         # Full-size model
+│   │   └── mini-tennis-ball.stl      # Test accessories
+│   ├── security-rover/                # Security platform
+│   │   └── security-rover-tank-chassis.scad # Tank design
+│   └── shared/                        # Common components
+├── scripts/                           # Utility scripts
+│   └── export-rover-parts.sh         # STL export tool
+└── snippets/                          # Code snippets
+    └── robot.code-snippets            # VS Code snippets
 ```
 
-## 🎯 Key Features Across All Rovers
+## 🎯 Universal Features
 
-### Intelligent Operation
-- AI-powered object recognition
-- Autonomous path planning
-- Real-time obstacle avoidance
-- Weather-aware scheduling
-- Energy optimization
+### Intelligence
+- **AI Object Recognition**: Identify specific items (balls, grass, intruders, animals)
+- **Behavioral Analysis**: Understand patterns and adapt
+- **Predictive Maintenance**: Anticipate service needs
+- **Weather Integration**: Adjust operations for conditions
+- **Learning System**: Improve performance over time
 
-### Modular Architecture
-- Hot-swappable tool attachments
-- Scalable chassis sizes
-- Universal mounting system
-- Quick-change batteries
-- Field-upgradeable components
+### Autonomy
+- **Self-Charging**: Return to dock or use solar power
+- **Route Optimization**: Efficient path planning
+- **Obstacle Avoidance**: Navigate around unexpected objects
+- **Multi-Zone Management**: Handle complex areas
+- **Schedule Management**: Operate at optimal times
 
-### Advanced Capabilities
-- Multi-unit coordination
-- Cloud-based fleet management
-- Predictive maintenance
-- Performance analytics
-- Remote monitoring
+### Connectivity
+- **Fleet Coordination**: Multiple units work together
+- **Cloud Intelligence**: Share knowledge across all rovers
+- **Remote Monitoring**: Track from anywhere
+- **API Integration**: Connect with existing systems
+- **Mobile Control**: iOS/Android apps
 
-## 💼 Markets & Applications
+## 💼 Markets & Industries
 
-### Sports & Recreation
-- **Tennis Courts**: Ball collection during practice
-- **Golf Courses**: Range ball retrieval, course maintenance
-- **Sports Complexes**: Multi-sport adaptability
+### Sports Facilities
+- Tennis clubs and academies
+- Golf courses and driving ranges
+- Multi-sport complexes
+- University athletic departments
 
-### Residential & Commercial
-- **Lawn Care**: Automated mowing and maintenance
-- **Snow Removal**: Winter weather management
-- **Property Security**: Perimeter monitoring
+### Property Management
+- Residential communities
+- Commercial properties
+- Municipal parks
+- Corporate campuses
 
 ### Agriculture
-- **Field Management**: Crop monitoring and treatment
-- **Harvesting Support**: Fruit/vegetable collection
-- **Livestock**: Feed distribution and monitoring
+- Livestock farms and ranches
+- Crop farms
+- Vineyards and orchards
+- Greenhouse operations
 
-### Defense & Security
-- **Base Security**: Autonomous patrol systems
-- **Perimeter Defense**: 24/7 surveillance
-- **Hazardous Areas**: Remote inspection capability
+### Security
+- Military installations
+- Critical infrastructure
+- Commercial properties
+- Residential security
 
-## 🏗️ Development Roadmap
+## 💰 ROI Examples
 
-### Phase 1: Core Platform (Q1-Q2 2024)
-- ✅ Conceptual design
-- ✅ 3D CAD models
-- ✅ Documentation
-- 🔄 Prototype development
-- ⏳ RoverOS development
+| Application | Manual Cost/Year | Rover Cost | Payback Period |
+|------------|------------------|------------|----------------|
+| Tennis ball collection | $15,000 | $3,000 | 2-3 months |
+| Golf course maintenance | $105,000 | $35,000 | 6-8 months |
+| Lawn service (5 acres) | $5,900 | $4,500 | 8-10 months |
+| Security patrol | $80,000 | $12,000 | 2-3 months |
+| Livestock herding | $50,000 | $25,000 | 6 months |
 
-### Phase 2: Tennis Rover (Q3 2024)
-- ⏳ Field testing
-- ⏳ AI training
-- ⏳ User trials
-- ⏳ Production design
+## 🏗️ Development Status
 
-### Phase 3: Platform Expansion (Q4 2024 - Q1 2025)
-- ⏳ Lawn Rover development
-- ⏳ Security Rover development
-- ⏳ Farm Rover planning
-- ⏳ Golf Rover planning
+### Available Now (Prototype/Design Phase)
+- Tennis Rover (1:10 scale prototype ready)
+- Golf Rover (comprehensive design complete)
+- Security Rover (tank chassis designed)
+- Lawn Rover (specifications complete)
+- Herding Rover (behavior AI designed)
 
-## 📊 Prototype Development
+### In Development
+- RoverOS core platform
+- RoverMap cloud system
+- RoverVision AI training
+- Mobile applications
 
-For those interested in building prototypes:
-- [Prototype Development Plan](docs/prototype-development-plan.md)
-- [Parts List & Pricing](docs/prototype-parts-pricing.md)
-- [Assembly Instructions](docs/prototype-assembly-instructions.md)
-- [The Rover Brand Guidelines](docs/the-rover-brand.md)
-
-## 💰 Investment & ROI
-
-### Example: Tennis Facility
-- **Manual Collection Cost**: $15,000/year
-- **Tennis Rover Investment**: $3,000
-- **ROI Period**: 2-3 months
-- **Annual Savings**: $12,000+
-
-### Licensing Models
-- **Direct Purchase**: One-time hardware cost
-- **RaaS (Robot-as-a-Service)**: Monthly subscription
-- **Enterprise Fleet**: Volume licensing
-- **OEM Partnership**: Technology licensing
+### Planned Releases
+- Q1 2025: Tennis Rover beta units
+- Q2 2025: Lawn Rover prototypes
+- Q3 2025: Golf Rover field testing
+- Q4 2025: Security Rover trials
+- 2026: Full product line launch
 
 ## 📄 Licensing
 
-This software and hardware designs are proprietary and confidential. No license is granted for use, modification, or distribution without express written permission from The Rover Project.
+**PROPRIETARY TECHNOLOGY** - This software and hardware designs are proprietary and confidential. No license is granted for use, modification, or distribution without express written permission.
+
+### Licensing Options
+- **Direct Purchase**: One-time hardware acquisition
+- **RaaS (Robot-as-a-Service)**: Monthly subscription model
+- **Enterprise Fleet**: Volume licensing for multiple units
+- **OEM Partnership**: Technology licensing for manufacturers
+- **Custom Development**: Specialized variants for unique needs
 
 **For licensing inquiries**: licensing@theroverproject.com
 
@@ -165,17 +209,44 @@ This software and hardware designs are proprietary and confidential. No license 
 
 **Patent Pending** - This technology may be covered by one or more patents or patent applications.
 
-**Trademarks**: The Rover™, RoverOS™, RoverVision™, RoverNav™, RoverCore™, RoverCloud™, RoverConnect™, and all associated logos are trademarks of The Rover Project.
+**Trademarks**: The Rover™, RoverOS™, RoverVision™, RoverNav™, RoverMap™, RoverCore™, RoverCloud™, RoverConnect™, RoverAI™, RoverCollect™, RoverCut™, and all associated logos are trademarks of The Rover Project.
 
 ## 🏢 About The Rover Project
 
-The Rover Project develops cutting-edge autonomous robotic solutions that transform how repetitive outdoor tasks are performed. Our mission is to increase efficiency, reduce costs, and improve safety across multiple industries through intelligent automation.
+The Rover Project is revolutionizing automation across multiple industries with intelligent, adaptable robotic platforms. Our modular approach allows one core technology to serve diverse markets, from sports facilities to farms to security applications.
+
+### Mission
+Transform repetitive tasks across all industries through intelligent, autonomous robotics that improve efficiency, reduce costs, and enhance safety.
+
+### Vision
+A world where intelligent robots handle routine tasks, freeing humans for creative and strategic work.
 
 ### Core Values
-- **Innovation**: Pushing the boundaries of robotics and AI
-- **Reliability**: Building systems that work in real-world conditions
-- **Modularity**: Creating adaptable solutions for diverse needs
-- **Sustainability**: Solar-powered, environmentally conscious design
+- **Innovation**: Continuous advancement in robotics and AI
+- **Versatility**: One platform, unlimited applications
+- **Reliability**: Robust systems for real-world conditions
+- **Sustainability**: Solar-powered, environmentally conscious
+- **Safety**: Human and animal-friendly operation
+
+## 🚀 Getting Started
+
+### For Developers
+1. Clone the repository
+2. Review documentation in `/docs`
+3. Explore 3D models in `/models`
+4. Run export script: `./scripts/export-rover-parts.sh`
+
+### For Potential Customers
+1. Identify your application in the product line
+2. Review specific documentation for your rover type
+3. Check ROI calculations for your use case
+4. Contact us for customization options
+
+### For Investors
+1. Review the multi-application platform strategy
+2. Examine market opportunities across industries
+3. Analyze ROI examples and business models
+4. Contact partnerships team for details
 
 ## 📬 Contact
 
@@ -184,8 +255,12 @@ The Rover Project develops cutting-edge autonomous robotic solutions that transf
 - **Licensing**: licensing@theroverproject.com
 - **Technical Support**: support@theroverproject.com
 - **Partnerships**: partners@theroverproject.com
+- **Investor Relations**: investors@theroverproject.com
 - **Media**: press@theroverproject.com
+- **GitHub**: https://github.com/egdcrypto/the-rover
 
 ---
 
-**The Rover™ - Revolutionizing Outdoor Automation** 🤖🌍
+**The Rover™ Platform - One Robot. Endless Possibilities.** 🤖🌍
+
+*Autonomous. Intelligent. Everywhere.*
