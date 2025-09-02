@@ -166,14 +166,112 @@ class HealthObservation:
 - **Breeding groups**: Organize for mating
 - **Market selection**: Choose animals for sale
 
+### Predator Protection System
+
+#### Advanced Predator Detection
+```python
+class PredatorDefense:
+    def __init__(self):
+        self.predator_database = {
+            'wolves': {'threat_level': 'critical', 'detection_range': 200},
+            'coyotes': {'threat_level': 'high', 'detection_range': 150},
+            'mountain_lions': {'threat_level': 'critical', 'detection_range': 250},
+            'bears': {'threat_level': 'extreme', 'detection_range': 300},
+            'wild_dogs': {'threat_level': 'high', 'detection_range': 100},
+            'eagles': {'threat_level': 'medium', 'targets': 'young_animals'}
+        }
+        
+    def detect_predator(self, sensor_data):
+        """Identify and track predators"""
+        # Thermal signature analysis
+        heat_signatures = self.analyze_thermal(sensor_data.thermal)
+        
+        # Movement pattern recognition
+        movement = self.analyze_movement_pattern(sensor_data.video)
+        
+        # Audio detection (growls, howls)
+        sounds = self.analyze_audio(sensor_data.audio)
+        
+        if predator := self.identify_threat(heat_signatures, movement, sounds):
+            return {
+                'species': predator.type,
+                'distance': predator.range,
+                'direction': predator.bearing,
+                'threat_level': self.predator_database[predator.type]['threat_level'],
+                'pack_size': predator.count
+            }
+    
+    def execute_defense(self, predator, herd):
+        """Multi-layered defense strategy"""
+        # Level 1: Early warning
+        self.alert_rancher(predator, priority='URGENT')
+        self.activate_herd_alert_sounds()
+        
+        # Level 2: Herd protection formation
+        self.move_vulnerable_to_center(herd)
+        self.position_rovers_defensively(predator.direction)
+        
+        # Level 3: Active deterrence
+        if predator.distance < 100:
+            self.activate_predator_deterrents()
+            self.coordinate_multi_rover_defense()
+        
+        # Level 4: Emergency evacuation
+        if predator.distance < 50:
+            self.emergency_herd_movement(safe_zone)
+            self.request_human_intervention()
+```
+
+#### Deterrent Systems
+- **High-intensity strobe lights**: Disorienting flashes
+- **Predator warning sounds**: Mountain lion screams, wolf howls
+- **Ultrasonic deterrents**: Species-specific frequencies
+- **Motion-activated sprayers**: Water/scent deterrents
+- **Laser barriers**: Non-harmful light walls
+- **Thunder sounds**: Loud booming noises
+
+#### Guardian Behavior
+```python
+class GuardianMode:
+    def patrol_perimeter(self):
+        """Proactive predator deterrence"""
+        # Night patrol with thermal scanning
+        # Mark territory with deterrent scents
+        # Create "presence" through lights and sounds
+        # Regular perimeter checks every 30 minutes
+        
+    def protect_young(self):
+        """Special protection for vulnerable animals"""
+        # Stay near calves/lambs during grazing
+        # Enhanced vigilance during birthing season
+        # Create protective barrier around nursery areas
+        # Immediate response to distress calls
+```
+
 ### Emergency Response
 ```yaml
 emergency_protocols:
-  predator_detection:
-    - Alert owner immediately
-    - Move herd to safe area
-    - Position between threat and animals
-    - Activate deterrent systems
+  predator_attack:
+    - Immediate multi-rover convergence
+    - Maximum deterrent activation
+    - Guide herd to fortified area
+    - Call 911/wildlife control
+    - Document for insurance/authorities
+    - Stay between predator and herd
+    
+  night_protection:
+    - Increased patrol frequency
+    - Thermal scanning every 15 minutes
+    - Coordinate with motion sensors
+    - Maintain defensive positions
+    - Alert on any approach within 500m
+    
+  pack_hunting_response:
+    - Identify alpha and focus deterrence
+    - Prevent flanking maneuvers
+    - Keep herd tightly grouped
+    - Multiple rover coordination
+    - Continuous siren and lights
     
   escaped_animal:
     - Track with GPS/visual
@@ -367,6 +465,98 @@ virtual_fence:
 - **Better weight gains**: Less stress = better growth
 - **Improved breeding**: Better group management
 - **Health cost savings**: Early problem detection
+
+## Search & Rescue Capabilities
+
+### Lost Person Tracking
+```python
+class SearchAndRescue:
+    def __init__(self):
+        self.search_modes = {
+            'lost_child': self.child_search_protocol,
+            'elderly_wandering': self.elderly_search,
+            'hiker_missing': self.wilderness_search,
+            'disaster_survivor': self.disaster_search
+        }
+        
+    def track_missing_person(self, last_known_location, person_profile):
+        """Systematic search for missing persons"""
+        search_pattern = self.calculate_search_grid(last_known_location)
+        
+        # Multi-sensor detection
+        detection_methods = [
+            self.thermal_scanning(),      # Body heat detection
+            self.audio_monitoring(),       # Listen for calls/cries
+            self.visual_recognition(),     # Clothing colors
+            self.scent_tracking(),        # Optional K9 attachment
+            self.phone_detection()        # Cellphone signals
+        ]
+        
+        # Behavioral prediction
+        likely_paths = self.predict_movement(person_profile)
+        
+        return self.coordinate_search(search_pattern, likely_paths)
+    
+    def child_search_protocol(self, child_info):
+        """Specialized search for missing children"""
+        # Children typically found within 1 mile
+        # Check hiding spots, water hazards first
+        # Use friendly sounds/music to attract
+        # Thermal imaging for small heat signatures
+        
+    def coordinate_multi_rover_search(self, area):
+        """Fleet coordination for large area coverage"""
+        # Grid assignment to each rover
+        # Overlap zones for redundancy
+        # Real-time position sharing
+        # Central command mapping
+```
+
+### Animal Tracking & Recovery
+```python
+class AnimalTracking:
+    def track_escaped_livestock(self, animal_id):
+        """Find and guide back escaped animals"""
+        tracking_data = {
+            'last_position': self.get_last_known_position(animal_id),
+            'movement_pattern': self.analyze_typical_behavior(animal_id),
+            'terrain_analysis': self.identify_likely_paths(),
+            'water_sources': self.map_attraction_points(),
+            'food_sources': self.identify_grazing_areas()
+        }
+        
+        # Deploy tracking strategy
+        self.follow_tracks(tracking_data)
+        self.check_common_hiding_spots()
+        self.monitor_fence_breaks()
+        
+    def wildlife_monitoring(self):
+        """Track wildlife for conservation or safety"""
+        # Monitor migration patterns
+        # Track endangered species
+        # Alert on dangerous wildlife
+        # Document for research
+```
+
+### Forensic Tracking
+```python
+class ForensicTracking:
+    def evidence_search(self, search_parameters):
+        """Assist law enforcement in evidence gathering"""
+        capabilities = {
+            'footprint_detection': self.detect_impressions(),
+            'object_search': self.systematic_ground_scan(),
+            'trail_following': self.track_disturbances(),
+            'documentation': self.forensic_photography()
+        }
+        
+    def poacher_detection(self):
+        """Anti-poaching surveillance"""
+        # Detect unauthorized vehicles
+        # Track human movement patterns
+        # Alert on suspicious activity
+        # Document evidence with timestamp/GPS
+```
 
 ## Future Features
 

@@ -95,6 +95,7 @@ class IntruderDetection:
 - **Object detection** - Weapons, tools, packages
 - **Vehicle recognition** - License plate reading
 - **Animal differentiation** - Ignore pets/wildlife
+- **Chemical Detection** - Drugs and explosives trace detection
 
 ### Patrol Patterns
 
@@ -158,6 +159,83 @@ class IntruderDetection:
 - **Voice warnings** - Pre-recorded messages
 - **Spotlight tracking** - Follows intruder
 - **Two-way audio** - Security can speak through robot
+
+### Chemical Detection System - RoverSniff™
+
+#### Drug Detection Capabilities
+- **Narcotics**: Cocaine, heroin, methamphetamine, fentanyl
+- **Cannabis**: THC detection including edibles
+- **Synthetic drugs**: MDMA, synthetic cannabinoids
+- **Prescription drugs**: Opioids, benzodiazepines
+
+#### Explosive Detection Capabilities
+- **Military explosives**: TNT, RDX, PETN, C4
+- **Improvised explosives**: TATP, ANFO
+- **Gunpowder**: Black powder, smokeless powder
+- **Precursors**: Nitrates, peroxides, fuel oils
+
+#### Detection Technology
+```python
+class ChemicalDetection:
+    def __init__(self):
+        self.detection_systems = {
+            'ims': IonMobilitySpectrometer(),  # Primary detection
+            'pid': PhotoionizationDetector(),   # VOC detection
+            'echem': ElectrochemicalArray(),    # Specific gases
+            'spectroscopy': RamanSpectrometer() # Standoff detection
+        }
+        
+    def scan_area(self, location):
+        """Perform chemical sweep of area"""
+        results = {
+            'drugs': [],
+            'explosives': [],
+            'hazmat': []
+        }
+        
+        # Continuous air sampling
+        air_sample = self.collect_air_sample(location)
+        
+        # IMS analysis for drugs/explosives
+        ims_result = self.detection_systems['ims'].analyze(air_sample)
+        if ims_result.substance_detected:
+            results[ims_result.category].append({
+                'substance': ims_result.name,
+                'concentration': ims_result.ppb,
+                'confidence': ims_result.confidence,
+                'gps': location
+            })
+        
+        # Alert if threshold exceeded
+        if results['drugs'] or results['explosives']:
+            self.trigger_chemical_alert(results)
+        
+        return results
+```
+
+#### Detection Modes
+1. **Patrol Sweep**: Continuous sampling while moving
+2. **Point Inspection**: Focused detection at specific location
+3. **Perimeter Monitor**: Fixed position detection
+4. **Vehicle Screening**: Scan vehicles at checkpoints
+5. **Package Inspection**: Non-invasive package screening
+
+#### Detection Range & Sensitivity
+- **Contact detection**: Nanogram levels on surfaces
+- **Vapor detection**: 1-10 meter range for strong sources
+- **Standoff detection**: Up to 50 meters with laser spectroscopy
+- **Sensitivity**: Parts per billion (ppb) for most substances
+- **Response time**: 2-10 seconds depending on mode
+
+#### K9 Comparison
+| Feature | Security Rover | K9 Unit |
+|---------|---------------|---------|
+| Detection accuracy | 95-99% | 85-95% |
+| Working hours | 24/7 | 4-6 hrs/day |
+| False positive rate | <2% | 10-30% |
+| Documentation | Digital chain of custody | Handler testimony |
+| Annual cost | $5,000 maintenance | $80,000+ (dog + handler) |
+| Hazard exposure | No risk | Risk to dog and handler |
 
 ### Communication System - RoverConnect Security
 

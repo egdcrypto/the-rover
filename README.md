@@ -17,6 +17,7 @@ A proprietary family of autonomous robotic platforms designed for diverse applic
 | **⛳ The Golf Rover™** | Golf ball collection + mowing | [Full Specs](docs/the-golf-rover-design.md) | Design | Golf courses |
 | **🌱 The Lawn Rover™** | Autonomous lawn maintenance | [Full Specs](docs/the-lawn-rover-design.md) | Concept | Residential/Commercial |
 | **🛡️ The Security Rover™** | 24/7 patrol & surveillance | [Full Specs](docs/the-security-rover-design.md) | Concept | Defense/Security |
+| **🎓 The School Rover™** | Campus safety & threat prevention | [Full Specs](docs/the-school-rover-design.md) | Priority | Schools/Universities |
 | **🐄 The Herding Rover™** | Livestock management | [Full Specs](docs/the-herding-rover-design.md) | Planning | Farms/Ranches |
 | **🌾 The Farm Rover™** | Agricultural operations | [Coming Soon](docs/) | Planning | Agriculture |
 | **❄️ The Snow Rover™** | Snow removal & ice management | [In Docs](docs/multi-application-platform.md) | Planning | Winter services |
@@ -152,7 +153,8 @@ the-rover/
 - Vineyards and orchards
 - Greenhouse operations
 
-### Security
+### Security & Safety
+- Schools and universities (threat prevention)
 - Military installations
 - Critical infrastructure
 - Commercial properties
@@ -166,6 +168,7 @@ the-rover/
 | Golf course maintenance | $105,000 | $35,000 | 6-8 months |
 | Lawn service (5 acres) | $5,900 | $4,500 | 8-10 months |
 | Security patrol | $80,000 | $12,000 | 2-3 months |
+| School safety officer | $60,000 | $25,000 | 5 months |
 | Livestock herding | $50,000 | $25,000 | 6 months |
 
 ## 🏗️ Development Status
