@@ -1,5 +1,5 @@
-// Tennis Ball Collecting Robot - 3D Model
-// Based on design specifications from docs/tennis-ball-robot-design.md
+// The Tennis Rover - 3D Model
+// Based on design specifications from docs/the-tennis-rover-design.md
 
 // Global Parameters
 $fn = 50; // Resolution for curved surfaces

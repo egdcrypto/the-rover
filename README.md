@@ -1,11 +1,11 @@
-# 🎾 Hopper - Autonomous Tennis Ball Collecting Robot
+# 🎾 The Tennis Rover™ - Autonomous Tennis Ball Collection System
 
-An open-source robotic system designed to autonomously collect tennis balls on tennis courts, making practice sessions more efficient and enjoyable.
+A proprietary robotic platform designed to autonomously collect tennis balls on tennis courts, making practice sessions more efficient and enjoyable. Part of The Rover™ family of autonomous systems.
 
 ![Robot Status](https://img.shields.io/badge/Status-Prototype-yellow)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi-red)
-![3D Printable](https://img.shields.io/badge/3D%20Printable-Yes-blue)
+![License](https://img.shields.io/badge/License-Proprietary-red)
+![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi-blue)
+![3D Printable](https://img.shields.io/badge/3D%20Printable-Yes-green)
 
 ## 📐 3D Models
 
@@ -68,7 +68,7 @@ Professional-grade tennis court robot:
 - Collects 50-100 balls
 - 4-6 hour battery life
 - Weather-resistant design
-- [See full specifications](docs/tennis-ball-robot-design.md)
+- [See full specifications](docs/the-tennis-rover-design.md)
 
 ## 🎯 Quick Start
 
@@ -170,8 +170,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Project Lead**: [Your Name]
 - **Email**: your.email@example.com
-- **Discord**: [Join our community](https://discord.gg/hopper)
-- **Issues**: [Report bugs](https://github.com/yourusername/hopper/issues)
+- **Discord**: [Join our community](https://discord.gg/rover)
+- **Issues**: [Report bugs](https://github.com/theroverproject/tennis-tennis-rover/issues)
 
 ## 🚧 Development Status
 

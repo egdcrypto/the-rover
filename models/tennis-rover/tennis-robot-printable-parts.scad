@@ -1,4 +1,4 @@
-// Tennis Ball Robot - 3D Printable Parts
+// The Tennis Rover - 3D Printable Parts
 // Each part is designed to fit on a standard 220x220mm print bed
 // Export each module separately as STL for printing
 
