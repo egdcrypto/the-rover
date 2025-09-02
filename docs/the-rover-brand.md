@@ -271,9 +271,17 @@ Public space maintenance for parks and recreational areas.
 - **Service Network**: Common parts and training
 
 ### Technology Extensions
-- **RoverDrone** - Aerial companion units for security patrol, perimeter monitoring, and elevated surveillance
+
+#### RoverDrone Family - Specialized Aerial Companions
+- **RoverDrone Security** - Perimeter patrol, surveillance, threat detection ($3,000-5,000)
+- **RoverDrone Inspect** - Infrastructure inspection, crop monitoring, damage assessment ($4,000-7,000)  
+- **RoverDrone Herd** - Livestock guidance, animal tracking, pasture monitoring ($2,500-4,000)
+- **RoverDrone Search** - Search & rescue, missing person location, emergency response ($5,000-8,000)
+- **RoverDrone Survey** - Mapping, progress monitoring, data collection ($3,500-6,000)
+
+#### Support Infrastructure
 - **RoverDock** - Universal charging stations with platform-specific tool storage
-- **RoverHub** - Central control systems for fleet coordination
+- **RoverHub** - Central control systems for fleet coordination  
 - **RoverFleet** - Multi-unit coordination and swarm intelligence
 
 ## Implementation Guidelines
